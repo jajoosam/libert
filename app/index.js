@@ -48,7 +48,6 @@ prompt.start();
                         console.log("To get this on your Kindle, open the experimental browser, and go to " + shortUrl);
                     })
                 open('http://gen.lib.rus.ec/get.php?md5=' + data[+result.which_one].md5.toLowerCase());
-                console.log(data);
             });
             });
             }
