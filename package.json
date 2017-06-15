@@ -1,0 +1,20 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Get eBooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Samarth Jajoo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "goo.gl": "^0.1.4",
+    "google-books-search": "^0.3.1",
+    "libgen": "^1.0.0",
+    "opn": "^5.1.0",
+    "prompt": "^1.0.0"
+  }
+}
