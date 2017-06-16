@@ -34,20 +34,21 @@ prompt.start();
                 console.log(n + ' "' +options.query + '" books');
                 while (n--){
                   console.log('***********');
-                  console.log("|||"+n+"|||");
+                  console.log("|||"+(n)+"|||");
                   console.log('Title: ' + data[n].title);
                   console.log('Author: ' + data[n].author);
                   console.log('Format: ' + data[n].extension);
-                  console.log('Download: ' +
-                              'http://gen.lib.rus.ec/get.php?md5=' +
-                              data[n].md5.toLowerCase());
               }
-              prompt.get(['which_one'], function (err, result) {
-                googl.shorten('http://gen.lib.rus.ec/get.php?md5=' + data[+result.which_one].md5.toLowerCase())
-                    .then(function (shortUrl) {
-                        console.log("To get this on your Kindle, open the experimental browser, and go to " + shortUrl);
-                    })
-                open('http://gen.lib.rus.ec/get.php?md5=' + data[+result.which_one].md5.toLowerCase());
+              prompt.get(['which_one', 'action'], function (err, result) {
+                if (result.action == "k") {
+                  googl.shorten('http://gen.lib.rus.ec/get.php?md5=' + data[result.which_one].md5.toLowerCase())
+                      .then(function (shortUrl) {
+                          console.log("To get this on your Kindle, open the experimental browser, and go to " + shortUrl);
+                      })
+                }
+                else{
+                  open('http://gen.lib.rus.ec/get.php?md5=' + data[+result.which_one].md5.toLowerCase());
+                }
             });
             });
             }
