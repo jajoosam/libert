@@ -18,3 +18,6 @@ Right now, it allows you to search for a book.
   1. User Data
   2. Recommendations
   3. Previews
+
+## Disclaimer
+All libert does is fetch books from particular sources, with a different UI. It is designed to make using these sources easier, and does not host anything itself. I, Samarth Jajoo claim no responsibility for any illegal actions performed through libert.
