@@ -21,4 +21,4 @@ Right now, it allows you to search for a book.
 - Conversion from and to different ebook formats
 
 ## Disclaimer
-All libert does is fetch books from gen.lib.rus.ec, with a different UI. It is designed to make using the source easier, and does not host anything itself. I, Samarth Jajoo claim no responsibility for any illegal actions performed through libert.
+All libert does is fetch books from gen.lib.rus.ec, with a different UI. It is designed to make using the source easier, and does not host anything itself. I, Samarth Jajoo, claim no responsibility for any materials hosted at the source.
