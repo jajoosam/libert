@@ -1,5 +1,5 @@
 # Libert 📖
-Popcorn Time for Books
+Get ebooks for free, easily.
 
 ## Set up
 Clone, Go into the directory and run `npm start "search query"`
