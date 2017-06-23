@@ -5,6 +5,9 @@ var books = require('google-books-search');
 var prompt = require('prompt');
 var open =  require("opn");
 var googl = require('goo.gl');
+let download = require('download');
+let ProgressBar = require('progress');
+var chalk = require('chalk');
 var book = "";
 googl.setKey('AIzaSyB-1qsQrieCoz_TPtrFJ4W3IlcSsrQ4drY');
 prompt.start();
@@ -12,6 +15,13 @@ prompt.start();
 //
 // Get two properties from the user: username and email
 //
+  let bar = new ProgressBar('Downloading: [:bar] :percent :etas', {
+              complete: '=',
+              incomplete: ' ',
+              width: 20,
+              total: 0
+  });
+
   var options = {
     mirror: 'http://gen.lib.rus.ec',
     query: "",
@@ -31,13 +41,13 @@ prompt.start();
                 if (err)
                   return err
                   var n = data.length;
-                console.log(n + ' "' +options.query + '" books');
+                console.log(chalk.magenta(n + ' "' +options.query + '" books found'));
                 while (n--){
                   console.log('***********');
-                  console.log("|||"+(n)+"|||");
-                  console.log('Title: ' + data[n].title);
-                  console.log('Author: ' + data[n].author);
-                  console.log('Format: ' + data[n].extension);
+                  console.log(chalk.red("|||"+(n)+"|||"));
+                  console.log(chalk.bold.cyan('Title: ' + data[n].title));
+                  console.log(chalk.green('Author: ' + data[n].author));
+                  console.log(chalk.italic('Format: ' + data[n].extension + '\n'));
               }
               prompt.get(['which_one', 'action'], function (err, result) {
                 if (result.action == "k") {
@@ -47,7 +57,18 @@ prompt.start();
                       })
                 }
                 else{
-                  open('http://gen.lib.rus.ec/get.php?md5=' + data[+result.which_one].md5.toLowerCase());
+                  var successStatements = [
+                      'Done. We hope you love the book. 🤞',
+                      'Thats a great choice. 😉',
+                      'That books sounds interesting 😍'
+                  ];
+                  var randomString = Math.floor(Math.random()*successStatements.length);
+                  download('http://gen.lib.rus.ec/get.php?md5=' + data[+result.which_one].md5.toLowerCase(), 'Downloads')
+                  .on('response', res => {
+                    bar.total = res.headers['content-length'];
+                    res.on('data', data => bar.tick(data.length));
+                  })
+                  .then(() => console.log(chalk.bold.blue(successStatements[randomString])));
                 }
             });
             });
