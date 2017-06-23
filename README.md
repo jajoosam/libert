@@ -7,10 +7,11 @@ Clone, Go into the directory and run `npm install`
 ## Current Usage
 Right now, it allows you to search for a book.
 
+- Go to `libert ` folder
 - Run `npm start "search query"`
 - It looks up the book on google books.
 - When you're asked `Download`, enter `y` and press enter to get a list of results for downloading the book.
-- When aked `which_one`, enter one of the numbers formatted as `|||"number"|||`.
+- When asked `which_one`, enter one of the numbers formatted as `|||"number"|||` Downloads first option by default.
 - When asked `action`, enter `k` for downloading on your kindle, or leave blank for downloading it to your computer.  By default, it will download to `installation-folder/Downloads` in the chosen format.
 
 ## To-Do
