@@ -21,6 +21,7 @@ Right now, it allows you to search for a book.
   2. Recommendations
   3. Previews
 - Conversion from and to different ebook formats
+- Add to npm registry
 
 
 
