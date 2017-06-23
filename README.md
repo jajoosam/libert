@@ -2,10 +2,11 @@
 Get ebooks for free, easily.
 
 ## Set up
-Clone, Go into the directory and run `npm start "search query"`
+Clone, Go into the directory and run `npm install`
 
 ## Current Usage
 Right now, it allows you to search for a book.
+
 - Run `npm start "search query"`
 - It looks up the book on google books.
 - When you're asked `Download`, enter `y` and press enter to get a list of results for downloading the book.
