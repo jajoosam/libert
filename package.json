@@ -1,6 +1,6 @@
 {
   "name": "code",
-  "version": "1.0.0",
+  "version": "0.1",
   "description": "Get eBooks",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,10 @@
   "dependencies": {
     "chalk": "^1.1.3",
     "download": "^6.2.3",
-    "express": "^4.15.3",
     "goo.gl": "^0.1.4",
     "google-books-search": "^0.3.1",
     "libgen": "^1.0.0",
     "opn": "^5.1.0",
-    "ora": "^1.3.0",
     "progress": "^2.0.0",
     "prompt": "^1.0.0"
   }

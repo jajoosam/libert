@@ -5,19 +5,17 @@ var books = require('google-books-search');
 var prompt = require('prompt');
 var open =  require("opn");
 var googl = require('goo.gl');
-let download = require('download');
-let ProgressBar = require('progress');
+var download = require('download');
+var ProgressBar = require('progress');
 var chalk = require('chalk');
 var book = "";
+
 googl.setKey('AIzaSyB-1qsQrieCoz_TPtrFJ4W3IlcSsrQ4drY');
 prompt.start();
 
-//
-// Get two properties from the user: username and email
-//
-  let bar = new ProgressBar('Downloading: [:bar] :percent :etas', {
-              complete: '=',
-              incomplete: ' ',
+  var bar = new ProgressBar('Downloading: [:bar] :percent :etas', {
+              compbare: '=',
+              incompbare: ' ',
               width: 20,
               total: 0
   });
@@ -32,7 +30,7 @@ prompt.start();
   }
   books.search(options.query, function(error, results) {
       if ( ! error ) {
-          info = "Title: " + results[0].title + "\nAuthor: " + results[0].authors + "\nPublished by " + results[0].publisher + " on " + results[0].publishedDate + "\nPages: " + results[0].pageCount + "\nRating: " + results[0].averageRating + "\n***\nDescription:\n" + results[0].description + "\n***";
+          info = chalk.yellow("Title: ") + results[0].title + chalk.green("\nAuthor: ") + results[0].authors + chalk.red("\nPublished by ") + results[0].publisher + " on " + chalk.cyan(results[0].publishedDate) + chalk.blue("\nPages: ") + results[0].pageCount + chalk.magenta("\nRating: ") + results[0].averageRating + chalk.gray("\n***\nDescription:\n") + results[0].description + "\n***";
           console.log(info);
           options.query = results[0].title + " " + results[0].authors;
           prompt.get(['Download'], function (err, result) {
