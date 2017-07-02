@@ -18,7 +18,7 @@ Right now, it allows you to search for a book.
 - When asked `action`, enter `k` for downloading on your kindle, or leave blank for downloading it to your computer.  By default, it will download to `installation-folder/Downloads` in the chosen format.
 
 ## To-Do
-- Complete front end app.
+- Web, Browser interface
 - Full Google API usage, with
   1. User Data
   2. Recommendations
