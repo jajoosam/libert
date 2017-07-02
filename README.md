@@ -1,6 +1,9 @@
 # Libert 📖
 Get ebooks for free, easily.
 
+## Screencast Guide
+[![asciicast](https://asciinema.org/a/127400.png)](https://asciinema.org/a/127400)
+
 ## Set up
 Clone, Go into the directory and run `npm install`
 
