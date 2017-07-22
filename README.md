@@ -4,7 +4,7 @@
 Get ebooks for free, easily.
 
 ## Use Web/Glitch Version
-Just go to (libert.glitch.me)[https://libert.glitch.me/] :-)
+Just go to [libert.glitch.me](https://libert.glitch.me/) :-)
 
 ## Screencast Guide for local version
 [![asciicast](https://asciinema.org/a/127400.png)](https://asciinema.org/a/127400)
