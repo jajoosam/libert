@@ -35,7 +35,7 @@ Right now, it allows you to search for a book.
 
 ## Contributing
 
-Try to stick to the To-Do, open an issue if you have an idea for a new feature. If you've added something cool, email `s@jajoosam.tech` to notify me, and we'll try to merge :smile:
+Try to stick to the To-Do, open an issue if you have an idea for a new feature. If you've added something cool, email `libert@jajoosam.tech` to notify me, and we'll try to merge :smile:
 
 
 
