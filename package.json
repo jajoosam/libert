@@ -1,22 +1,18 @@
 {
-  "name": "libert",
+  "name": "libert-web",
   "version": "1.0.0",
   "description": "Get eBooks for free, easily",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
+  "main": "server.js",
   "author": "Samarth Jajoo",
   "license": "ISC",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "chalk": "^1.1.3",
-    "download": "^6.2.3",
     "goo.gl": "^0.1.4",
     "google-books-search": "^0.3.1",
     "libgen": "^1.0.0",
-    "opn": "^5.1.0",
-    "progress": "^2.0.0",
-    "prompt": "^1.0.0"
+    "express": "^4.14.1",
+    "pug": "2.0.0-rc.3"
   }
 }

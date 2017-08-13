@@ -1,0 +1,15 @@
+img.card-body {
+  position: relative;
+  display: block;
+}
+
+a {
+  opacity: 0.8;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+a[href] {
+  opacity: 1;
+  cursor: pointer;
+}
