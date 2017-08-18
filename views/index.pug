@@ -5,21 +5,25 @@ html
       include wing.css
     style
       include styles.css
-    title=name
+    title=title + " - libert 📖"
   body
     div(class="container")
       div(class="cards horizontal-align vertical-align")
         div(class="card")
-          h5(class="card-header")=name
+          h5(class="card-header")=title
           img(src=image class="card-body")
           p(class="card-body")
-            b Author: #{author}
+            b Author: 
+            span #{author}
             br
-            b Pages: #{pages}
+            b Pages: 
+            span #{pages}
             br
-            b Rating: #{rating}
+            b Rating: 
+            span #{rating}
             br
-            #{description}
+            span #{description}
+            
           div(class="card-footer center text-center")
             p
               a(href=mobi class="button") mobi
@@ -27,3 +31,6 @@ html
               a(href=epub class="button") epub
               span   
               a(href=pdf class="button") pdf
+            a(href="http://jajoosam.tech/pay" class ="button outline") Donate
+        script
+          include tracking.js

@@ -1,0 +1,47 @@
+{
+    "J8ahqXjUhAAC": {
+        "title": "Ready Player One",
+        "author": [
+            "Ernest Cline"
+        ],
+        "publisher": "Crown Pub",
+        "publishedDate": "2011",
+        "pages": 374,
+        "rating": 4,
+        "description": "Immersing himself in a mid-21st-century technological virtual utopia to escape an ugly real world of famine, poverty and disease, Wade Watts joins an increasingly violent effort to solve a series of puzzles by the virtual world's super-wealthy creator, who has promised that the winner will be his heir. (This book was previously listed in Forecast.)",
+        "image": "http://books.google.com/books/content?id=J8ahqXjUhAAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": "http://libgen.io/get.php?md5=7661fbc8dbe9c328ee916ffcaa1203b1",
+        "epub": "http://libgen.io/get.php?md5=095812c4a3af9a861c72588c23cc41cc",
+        "pdf": "http://libgen.io/get.php?md5=c170bc4cd68d31920b0ded1f68cd7fd8"
+    },
+    "efPjAAAAQBAJ": {
+        "title": "V for Vendetta",
+        "author": [
+            "Alan Moore"
+        ],
+        "publisher": "DC",
+        "publishedDate": "2008-10-24",
+        "rating": 4,
+        "description": "\"Alan Moore outdoes himself... Extraordinary ... a poetic celebration of the powers of the imagination.\" - Kurt Loder, MTV A powerful story about loss of freedom and individuality, V FOR VENDETTA takes place in a totalitarian England following a devastating war that changed the face of the planet. In a world without political freedom, personal freedom and precious little faith in anything, comes a mysterious man in a white porcelain mask who fights political oppressors through terrorism and seemingly absurd acts in this gripping tale of the blurred lines between ideological good and evil.",
+        "image": "http://books.google.com/books/content?id=efPjAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://libgen.io/get.php?md5=40ee6a87c7deb38c5379688b61a09c70",
+        "_locals": {}
+    },
+    "wbtxzgAndU8C": {
+        "title": "Web Site Measurement Hacks",
+        "author": [
+            "Eric Peterson"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2005-08-26",
+        "pages": 405,
+        "description": "Helps organizations and individual operators in making the most of their Web investment by providing tools, techniques, and strategies for measuring their site's overall effectiveness. Providing the definitions of commonly-used terms, this book teaches how to gather crucial marketing data, how to drive potential customers to action, and more.",
+        "image": "http://books.google.com/books/content?id=wbtxzgAndU8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": false,
+        "_locals": {}
+    }
+}
