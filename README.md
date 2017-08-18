@@ -35,7 +35,7 @@ If you're looking for Libert CLI, https://glitch.com/~libert-cli
 
 Try to stick to the To-Do, open an issue on github if you have an idea for a new feature. If you've added something cool, email `libert@jajoosam.tech` to notify me, and we'll try to merge :-)
 
-Libert wouldn't have been the same without @leovmark and @kbrsh
+Libert wouldn't have been the same without (@leovmark)[twitter.com/leovmark] and (@kbrsh)[kabir.ml]
 
 ## Disclaimer
 
