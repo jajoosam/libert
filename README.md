@@ -20,6 +20,8 @@ If you're looking for Libert API, https://glitch.com/~libert-api
 If you're looking for Libert CLI, https://glitch.com/~libert-cli
 
 ## To-Do
+- Landing Page
+- Search button
 - Full Google API usage, with
   1. User Data
   2. Recommendations
