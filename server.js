@@ -9,8 +9,12 @@ var fs = require('fs');
 var libgen = require('libgen');
 var books = require('google-books-search');
 var googl = require('goo.gl');
+var JSONdb = require('simple-json-db');
 var output = {};
-
+var cache = false;
+var id = "";
+// cache
+const db = new JSONdb("bla.json");
 // goo.gl auth
 googl.setKey('AIzaSyB-1qsQrieCoz_TPtrFJ4W3IlcSsrQ4drY');
 
@@ -25,11 +29,31 @@ var options = {
 app.use(express.static('public'));
 app.set('view engine', 'pug');
 
+//index
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
+//about
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/about.html");
+});
+
 // app
 app.get("/:keyword", (req, res) => {
   options.query = req.params.keyword;
     books.search(options.query, function(error, results) {
       if ( ! error ) {
+        id = results[0].id;
+        console.log("IDENTITY: " + id);
+        // cache check
+        if(db.has(id)){
+          cache = true;
+          console.log("from cache")
+          res.render("index", db.get(id));
+          return;
+        }
+        
          // book info
          output.title = results[0].title ;
          output.author = results[0].authors;
@@ -39,7 +63,8 @@ app.get("/:keyword", (req, res) => {
          output.rating = results[0].averageRating;
          output.description = results[0].description;
          output.image = results[0].thumbnail;
-         console.log(output);
+         
+         
         // setting libgen search option
         options.query = results[0].title + " " + results[0].authors[0];
         // reading libgen results
@@ -48,7 +73,7 @@ app.get("/:keyword", (req, res) => {
           output.epub = false;
           output.pdf = false;
               libgen.search(options, (err, data) => {
-                console.log(data);
+                
                 if (err)
                   return err
                   var n = data.length;
@@ -64,6 +89,9 @@ app.get("/:keyword", (req, res) => {
                     output.pdf = 'http://libgen.io/get.php?md5=' + data[n].md5.toLowerCase();
                   }
                 }
+                if(cache===false){
+                  db.set(id, output);
+                }
                 res.render("index", output);
 
             });
@@ -73,11 +101,6 @@ app.get("/:keyword", (req, res) => {
           console.log(error);
       }
   });
-  
-  
-  
-
-  console.log(output)
   
 });
 
