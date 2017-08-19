@@ -9,7 +9,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "goo.gl": "^0.1.4",
     "google-books-search": "^0.3.1",
     "libgen": "^1.0.0",
     "express": "^4.14.1",

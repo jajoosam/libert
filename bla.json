@@ -43,5 +43,51 @@
         "epub": false,
         "pdf": false,
         "_locals": {}
+    },
+    "eASACwAAQBAJ": {
+        "title": "Computer Vision for the Web",
+        "author": [
+            "Foat Akhmadeev"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2015-10-14",
+        "pages": 116,
+        "description": "Unleash the power of the Computer Vision algorithms in JavaScript to develop vision-enabled web content About This Book Explore the exciting world of image processing, and face and gesture recognition, and implement them in your website Develop wonderful web projects to implement Computer Vision algorithms in an effective way A fast-paced guide to help you deal with real-world Computer Vision applications using JavaScript libraries Who This Book Is For If you have an interest in Computer Vision or wish to apply Computer Vision algorithms such as face, custom object, and gesture recognition for an online application, then this book is ideal for you. Prior understanding of the JavaScript language and core mathematical concepts is recommended. What You Will Learn Apply complex Computer Vision algorithms in your applications using JavaScript Put together different JavaScript libraries to discover objects in photos Get to grips with developing simple computer vision applications on your own Understand when and why you should use different computer vision methods Apply various image filters to images and videos Recognize and track many different objects, including face and face particles using powerful face recognition algorithms Explore ways to control your browser without touching the mouse or keyboard In Detail JavaScript is a dynamic and prototype-based programming language supported by every browser today. JavaScript libraries boast outstanding functionalities that enable you to furnish your own Computer Vision projects, making it easier to develop JavaScript–based applications, especially for web-centric technologies. It makes the implementation of Computer Vision algorithms easier as it supports scheme-based functional programming. This book will give you an insight into controlling your applications with gestures and head motion and readying them for the web. Packed with real-world tasks, it begins with a walkthrough of the basic concepts of Computer Vision that the JavaScript world offers us, and you'll implement various powerful algorithms in your own online application. Then, we move on to a comprehensive analysis of JavaScript functions and their applications. Furthermore, the book will show you how to implement filters and image segmentation, and use tracking.js and jsfeat libraries to convert your browser into Photoshop. Subjects such as object and custom detection, feature extraction, and object matching are covered to help you find an object in a photo. You will see how a complex object such as a face can be recognized by a browser as you move toward the end of the book. Finally, you will focus on algorithms to create a human interface. By the end of this book, you will be familiarized with the application of complex Computer Vision algorithms to develop your own applications, without spending much time learning sophisticated theory. Style and approach This book is an easy-to-follow project-based guide that throws you directly into the excitement of the Computer Vision theme. A “more in less” approach is followed by important concepts explained in a to-the-point, easy-to-understand manner.",
+        "image": "http://books.google.com/books/content?id=eASACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": "http://libgen.io/get.php?md5=867bff4b279097a7ebc163cc49b2fb41",
+        "pdf": false
+    },
+    "wIgSDQAAQBAJ": {
+        "title": "Computer Security – ESORICS 2016",
+        "author": [
+            "Ioannis Askoxylakis",
+            "Sotiris Ioannidis",
+            "Sokratis Katsikas",
+            "Catherine Meadows"
+        ],
+        "publisher": "Springer",
+        "publishedDate": "2016-09-14",
+        "pages": 623,
+        "description": "The two-volume set, LNCS 9878 and 9879 constitutes the refereed proceedings of the 21st European Symposium on Research in Computer Security, ESORICS 2016, held in Heraklion, Greece, in September 2016. The 60 revised full papers presented were carefully reviewed and selected from 285 submissions. The papers cover a wide range of topics in security and privacy, including data protection: systems security, network security, access control, authentication, and security in such emerging areas as cloud computing, cyber-physical systems, and the Internet of Things.",
+        "image": "http://books.google.com/books/content?id=wIgSDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://libgen.io/get.php?md5=94acd2272776f781dae78396ee691074"
+    },
+    "KzzXzqLzXi8C": {
+        "title": "SEO Warrior",
+        "author": [
+            "John I Jerkovic"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2009-11-09",
+        "pages": 496,
+        "rating": 5,
+        "description": "How can you make it easier for people to find your website? And how can you convert casual visitors into active users? SEO Warrior shows you how it's done through a collection of tried and true techniques, hacks, and best practices. Learn the nuts and bolts of search engine optimization (SEO) theory, the importance of keyword strategy, and how to avoid and remedy search engine traps. You'll also learn about search engine marketing (SEM) practices, such as Google AdWords, and how you can use social networking to increase your visibility. Ideal for web developers, savvy marketers, webmasters, and anyone else interested in SEO, this book serves not only as an SEO tutorial, but also as a reference for implementing effective SEO techniques. Create compelling sites with SEO that can stand the test of time Optimize your site for Google, Yahoo!, Microsoft's Bing, as well as search engines used in different parts of the world Conduct keyword research to find the best terms to reach your audience--and the related terms they'll respond to Learn what makes search engines tick by utilizing custom scripts Analyze your site to see how it measures up to the competition",
+        "image": "http://books.google.com/books/content?id=KzzXzqLzXi8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://libgen.io/get.php?md5=fc32e35f0dbb2d6d6e19df7b1b6b8947"
     }
 }

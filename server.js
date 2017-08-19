@@ -8,15 +8,12 @@ var app = express();
 var fs = require('fs');
 var libgen = require('libgen');
 var books = require('google-books-search');
-var googl = require('goo.gl');
 var JSONdb = require('simple-json-db');
 var output = {};
 var cache = false;
 var id = "";
 // cache
 const db = new JSONdb("bla.json");
-// goo.gl auth
-googl.setKey('AIzaSyB-1qsQrieCoz_TPtrFJ4W3IlcSsrQ4drY');
 
 // libgen options
 var options = {
