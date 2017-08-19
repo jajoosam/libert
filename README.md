@@ -1,17 +1,9 @@
 # Libert 📖
 Get ebooks for free, easily.
+(Github)[https://github.com/jajoosam/libert]
 
 ## Use Web/Glitch Version
-Just go to [libert.glitch.me/](https://libert.glitch.me/) + `book`
-
-Examples with public domain books - 
-
-- https://libert.glitch.me/frankenstein
-- https://libert.glitch.me/jane%20eyre
-- https://libert.glitch.me/tom%20sawyer
-
-## Web version - Glitch Page
-If you're looking for Libert web, https://glitch.com/~libert
+Just go to [libert.glitch.me](https://libert.glitch.me/) :-)
 
 ## API
 If you're looking for Libert API, https://glitch.com/~libert-api
@@ -20,8 +12,6 @@ If you're looking for Libert API, https://glitch.com/~libert-api
 If you're looking for Libert CLI, https://glitch.com/~libert-cli
 
 ## To-Do
-- Landing Page
-- Search button
 - Full Google API usage, with
   1. User Data
   2. Recommendations
@@ -29,13 +19,14 @@ If you're looking for Libert CLI, https://glitch.com/~libert-cli
 - Conversion from and to different ebook formats
 - Add to npm registry
 
-
+## Github
+https://github.com/jajoosam/libert
 
 ## Contributing
 
 Try to stick to the To-Do, open an issue on github if you have an idea for a new feature. If you've added something cool, email `libert@jajoosam.tech` to notify me, and we'll try to merge :-)
 
-Libert wouldn't have been the same without [@leovarmak](http://twitter.com/leovarmak) and [@kbrsh](http://kabir.ml)
+
 
 ## Disclaimer
 
