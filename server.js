@@ -17,7 +17,7 @@ const db = new JSONdb("bla.json");
 
 // libgen options
 var options = {
-    mirror: 'http://libgen.io',
+    mirror: 'http://gen.lib.rus.ec',
     query: "",
     author: "",
 };
@@ -40,7 +40,7 @@ app.get("/about", (req, res) => {
 app.get("/:keyword", (req, res) => {
   options.query = req.params.keyword;
     books.search(options.query, function(error, results) {
-      if ( ! error ) {
+      if ( ! error && results[0]) {
         id = results[0].id;
         console.log("IDENTITY: " + id);
         // cache check
@@ -61,7 +61,10 @@ app.get("/:keyword", (req, res) => {
          output.description = results[0].description;
          output.image = results[0].thumbnail;
          
-         
+         if(results[0].authors === undefined){
+           res.sendFile(__dirname + "/error.html");
+           return;
+         }
         // setting libgen search option
         options.query = results[0].title + " " + results[0].authors[0];
         // reading libgen results
@@ -72,18 +75,27 @@ app.get("/:keyword", (req, res) => {
               libgen.search(options, (err, data) => {
                 
                 if (err)
-                  return err
-                  var n = data.length;
+                  res.sendFile(__dirname + "/error.html");
+                  
+                    console.log(data);
+                  
+                if(data===undefined){
+                  res.sendFile(__dirname + "/error.html");
+                  console.log(data);
+                  return;
+                }
+                
+                var n = data.length;
                 // link to actual download links
                 while (n--){
                   if(data[n].extension == "mobi" && output.mobi == false){
-                    output.mobi = 'http://libgen.io/get.php?md5=' + data[n].md5.toLowerCase();
+                    output.mobi = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
                   }
                   if(data[n].extension == "epub" && output.epub == false){
-                    output.epub = 'http://libgen.io/get.php?md5=' + data[n].md5.toLowerCase();
+                    output.epub = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
                   }
                   if(data[n].extension == "pdf" && output.pdf == false){
-                    output.pdf = 'http://libgen.io/get.php?md5=' + data[n].md5.toLowerCase();
+                    output.pdf = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
                   }
                 }
                 if(cache===false){
@@ -95,7 +107,7 @@ app.get("/:keyword", (req, res) => {
             
           
       } else {
-          console.log(error);
+          res.sendFile(__dirname + "/error.html");
       }
   });
   
