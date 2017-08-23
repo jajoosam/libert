@@ -19,6 +19,9 @@ If you're looking for Libert API, https://glitch.com/~libert-api
 ## CLI
 If you're looking for Libert CLI, https://glitch.com/~libert-cli
 
+## Github
+If you're looking for the Github Page, https://github.com/jajoosam/libert
+
 ## To-Do
 - Landing Page
 - Search button

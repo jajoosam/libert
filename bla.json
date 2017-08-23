@@ -89,5 +89,96 @@
         "mobi": false,
         "epub": false,
         "pdf": "http://libgen.io/get.php?md5=fc32e35f0dbb2d6d6e19df7b1b6b8947"
+    },
+    "CNvRtnZUPI8C": {
+        "title": "Big Book of Windows Hacks",
+        "author": [
+            "Preston Gralla"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2007",
+        "pages": 647,
+        "rating": 4.5,
+        "description": "Provides more than two hundred tips on ways to modify the Windows XP and Vista operating system, applications, and hardware associated with it.",
+        "image": "http://books.google.com/books/content?id=CNvRtnZUPI8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://libgen.io/get.php?md5=39a601d66b039519cd4de71b839357e6"
+    },
+    "bdf4vS2n7N8C": {
+        "title": "Web Design in a Nutshell",
+        "author": [
+            "Jennifer Niederst Robbins"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2006-02-21",
+        "pages": 830,
+        "rating": 4,
+        "description": "Are you still designing web sites like it's 1999? If so, you're in for a surprise. Since the last edition of this book appeared five years ago, there has been a major climate change with regard to web standards. Designers are no longer using (X)HTML as a design tool, but as a means of defining the meaning and structure of content. Cascading Style Sheets are no longer just something interesting to tinker with, but rather a reliable method for handling all matters of presentation, from fonts and colors to the layout of the entire page. In fact, following the standards is now a mandate of professional web design. Our popular reference, Web Design in a Nutshell, is one of the first books to capture this new web landscape with an edition that's been completely rewritten and expanded to reflect the state of the art. In addition to being an authoritative reference for (X)HTML and Cascading Style Sheets, this book also provides an overview of the unique requirements of designing for the Web and gets to the nitty-gritty of JavaScript and DOM Scripting, web graphics optimization, and multimedia production. It is an indispensable tool for web designers and developers of all levels. The third edition covers these contemporary web design topics: Structural layer: HTML 4.01 and XHTML 1.0 (9 chapters), including an alphabetical reference of all elements, attributes and character entities Presentation layer: Ten all-new chapters on Cascading Style Sheets, Level 2.1, including an alphabetical reference of all properties and values. Behavior layer: JavaScript and scripting with the Document Object Model (DOM) Web environment: New web standards, browsers, display devices, accessibility, and internationalization Web graphics optimization: Producing lean and mean GIF, JPEG, PNG, and animated GIFs Multimedia: Web audio, video, Flash, and PDF Organized so that readers can find answers quickly, Web Design in a Nutshell, Third Edition helps experienced designers come up to speed quickly on standards-based web design, and serves as a quick reference for those already familiar with the new standards and technology. There are many books for web designers, but none that address such a wide variety of topics. Find out why nearly half a million buyers have made this the most popular web design book available.",
+        "image": "http://books.google.com/books/content?id=bdf4vS2n7N8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://libgen.io/get.php?md5=712a01013025244341798180036e304f"
+    },
+    "e8SgPwAACAAJ": {
+        "title": "The 22 Immutable Laws of Marketing",
+        "author": [
+            "Al Ries",
+            "Jack Trout"
+        ],
+        "publisher": "Profile Books(GB)",
+        "publishedDate": "1994",
+        "pages": 160,
+        "rating": 5,
+        "description": "Ries and Trout share their rules for certain successes in the world of marketing. Combining a wide-ranging historical overview with a keen eye for the future, the authors bring to light 22 superlative tools and innovative techniques for the international marketplace.",
+        "image": "http://books.google.com/books/content?id=e8SgPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://libgen.io/get.php?md5=2764b73715bbed39e142271cdcbd58bb"
+    },
+    "TM8zvgAACAAJ": {
+        "title": "The Internet of Money",
+        "author": [
+            "Andreas M. Antonopoulos"
+        ],
+        "publisher": "Createspace Independent Publishing Platform",
+        "publishedDate": "2016-08-30",
+        "pages": 148,
+        "rating": 4,
+        "description": "While many books explain the how of bitcoin, The Internet of Money delves into the why of bitcoin. Acclaimed information-security expert and author of Mastering Bitcoin, Andreas M. Antonopoulos examines and contextualizes the significance of bitcoin through a series of essays spanning the exhilarating maturation of this technology. Bitcoin, a technological breakthrough quietly introduced to the world in 2008, is transforming much more than finance. Bitcoin is disrupting antiquated industries to bring financial independence to billions worldwide. In this book, Andreas explains why bitcoin is a financial and technological evolution with potential far exceeding the label -digital currency.- Andreas goes beyond exploring the technical functioning of the bitcoin network by illuminating bitcoin's philosophical, social, and historical implications. As the internet has essentially transformed how people around the world interact and has permanently impacted our lives in ways we never could have imagined, bitcoin--the internet of money--is fundamentally changing our approach to solving social, political, and economic problems through decentralized technology.",
+        "image": "http://books.google.com/books/content?id=TM8zvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "mobi": false,
+        "epub": "http://libgen.io/get.php?md5=5b99b7814224da87cb9a10d527c6228e",
+        "pdf": false
+    },
+    "VznTCwAAQBAJ": {
+        "title": "The Book Thief",
+        "author": [
+            "Markus Zusak"
+        ],
+        "publisher": "Knopf Books for Young Readers",
+        "publishedDate": "2016-03-08",
+        "pages": 592,
+        "rating": 4.5,
+        "description": "Trying to make sense of the horrors of World War II, Death relates the story of Liesel--a young German girl whose book-stealing and story-telling talents help sustain her family and the Jewish man they are hiding, as well as their neighbors.",
+        "image": "http://books.google.com/books/content?id=VznTCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": "http://gen.lib.rus.ec/get.php?md5=3845a826b57cb57d107303abc6348786",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=a53f9968b27c6189e3abb29ed858348b"
+    },
+    "7papZR4oVssC": {
+        "title": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character",
+        "author": [
+            "Richard P. Feynman"
+        ],
+        "publisher": "W. W. Norton & Company",
+        "publishedDate": "2010-06-28",
+        "pages": 352,
+        "rating": 4,
+        "description": "A New York Times bestseller—the outrageous exploits of one of this century's greatest scientific minds and a legendary American original. Richard Feynman, winner of the Nobel Prize in physics, thrived on outrageous adventures. Here he recounts in his inimitable voice his experience trading ideas on atomic physics with Einstein and Bohr and ideas on gambling with Nick the Greek; cracking the uncrackable safes guarding the most deeply held nuclear secrets; accompanying a ballet on his bongo drums; painting a naked female toreador. In short, here is Feynman's life in all its eccentric—a combustible mixture of high intelligence, unlimited curiosity, and raging chutzpah.",
+        "image": "http://books.google.com/books/content?id=7papZR4oVssC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": "http://gen.lib.rus.ec/get.php?md5=c92b3aa24e66c154fa8c99879c005e80",
+        "epub": "http://gen.lib.rus.ec/get.php?md5=bd6202162337eb9f26930a955967d83f",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=3e123f74a524f71a99351cfe20124a65"
     }
 }
