@@ -180,5 +180,20 @@
         "mobi": "http://gen.lib.rus.ec/get.php?md5=c92b3aa24e66c154fa8c99879c005e80",
         "epub": "http://gen.lib.rus.ec/get.php?md5=bd6202162337eb9f26930a955967d83f",
         "pdf": "http://gen.lib.rus.ec/get.php?md5=3e123f74a524f71a99351cfe20124a65"
+    },
+    "_CWlKRYLbIwC": {
+        "title": "A Short History of Nearly Everything",
+        "author": [
+            "Bill Bryson"
+        ],
+        "publisher": "Anchor Canada",
+        "publishedDate": "2012-05-15",
+        "pages": 560,
+        "rating": 4,
+        "description": "One of the world’s most beloved and bestselling writers takes his ultimate journey -- into the most intriguing and intractable questions that science seeks to answer. In A Walk in the Woods, Bill Bryson trekked the Appalachian Trail -- well, most of it. In In A Sunburned Country, he confronted some of the most lethal wildlife Australia has to offer. Now, in his biggest book, he confronts his greatest challenge: to understand -- and, if possible, answer -- the oldest, biggest questions we have posed about the universe and ourselves. Taking as territory everything from the Big Bang to the rise of civilization, Bryson seeks to understand how we got from there being nothing at all to there being us. To that end, he has attached himself to a host of the world’s most advanced (and often obsessed) archaeologists, anthropologists, and mathematicians, travelling to their offices, laboratories, and field camps. He has read (or tried to read) their books, pestered them with questions, apprenticed himself to their powerful minds. A Short History of Nearly Everything is the record of this quest, and it is a sometimes profound, sometimes funny, and always supremely clear and entertaining adventure in the realms of human knowledge, as only Bill Bryson can render it. Science has never been more involving or entertaining. From the Hardcover edition.",
+        "image": "http://books.google.com/books/content?id=_CWlKRYLbIwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": "http://gen.lib.rus.ec/get.php?md5=9fff3cd143688bb899c4e3c3506c3bd5",
+        "epub": "http://gen.lib.rus.ec/get.php?md5=adc4514330236b862772900cc1a0d6ab",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=52fec8e9776901cabec19b66cfb540fe"
     }
 }
