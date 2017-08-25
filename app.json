@@ -1,0 +1,7 @@
+{
+  "name": "Libert",
+  "description": "Get books for free, easily!",
+  "repository": "https://github.com/jajoosam/libert",
+  "logo": "http://i.imgur.com/sKBbJaJ.png",
+  "keywords": ["node", "express", "static", "free", "books", "ebooks"]
+}

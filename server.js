@@ -22,13 +22,6 @@ var options = {
     author: "",
 };
 
-libgen.mirror(function(err,urlString){
-  if (err)
-    return console.error(err);
-  options.mirror = urlString;
-  return console.log(urlString + ' is currently fastest');
-});
-
 // starting express
 app.use(express.static('public'));
 app.set('view engine', 'pug');
