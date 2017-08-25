@@ -1,8 +1,8 @@
 # Libert 📖
 Get ebooks for free, easily.
 
-## Use Web/Glitch Version
-Just go to [libert.glitch.me/](https://libert.glitch.me/) + `book`
+## Use Web Version
+http://libert.ml
 
 Examples with public domain books - 
 
