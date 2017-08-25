@@ -1,8 +1,10 @@
 # Libert 📖
 Get ebooks for free, easily.
 
-## Use Web Version
-http://libert.ml
+**Recommended: Deploy your own libert to heroku using the button above!**
+
+## Use Web/Glitch Version
+Just go to [libert.glitch.me/](https://libert.glitch.me/) + `book`
 
 Examples with public domain books - 
 

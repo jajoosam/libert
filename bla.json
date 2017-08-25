@@ -180,5 +180,104 @@
         "mobi": "http://gen.lib.rus.ec/get.php?md5=c92b3aa24e66c154fa8c99879c005e80",
         "epub": "http://gen.lib.rus.ec/get.php?md5=bd6202162337eb9f26930a955967d83f",
         "pdf": "http://gen.lib.rus.ec/get.php?md5=3e123f74a524f71a99351cfe20124a65"
+    },
+    "_CWlKRYLbIwC": {
+        "title": "A Short History of Nearly Everything",
+        "author": [
+            "Bill Bryson"
+        ],
+        "publisher": "Anchor Canada",
+        "publishedDate": "2012-05-15",
+        "pages": 560,
+        "rating": 4,
+        "description": "One of the world’s most beloved and bestselling writers takes his ultimate journey -- into the most intriguing and intractable questions that science seeks to answer. In A Walk in the Woods, Bill Bryson trekked the Appalachian Trail -- well, most of it. In In A Sunburned Country, he confronted some of the most lethal wildlife Australia has to offer. Now, in his biggest book, he confronts his greatest challenge: to understand -- and, if possible, answer -- the oldest, biggest questions we have posed about the universe and ourselves. Taking as territory everything from the Big Bang to the rise of civilization, Bryson seeks to understand how we got from there being nothing at all to there being us. To that end, he has attached himself to a host of the world’s most advanced (and often obsessed) archaeologists, anthropologists, and mathematicians, travelling to their offices, laboratories, and field camps. He has read (or tried to read) their books, pestered them with questions, apprenticed himself to their powerful minds. A Short History of Nearly Everything is the record of this quest, and it is a sometimes profound, sometimes funny, and always supremely clear and entertaining adventure in the realms of human knowledge, as only Bill Bryson can render it. Science has never been more involving or entertaining. From the Hardcover edition.",
+        "image": "http://books.google.com/books/content?id=_CWlKRYLbIwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": "http://gen.lib.rus.ec/get.php?md5=9fff3cd143688bb899c4e3c3506c3bd5",
+        "epub": "http://gen.lib.rus.ec/get.php?md5=adc4514330236b862772900cc1a0d6ab",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=52fec8e9776901cabec19b66cfb540fe"
+    },
+    "yBYmAAAAMAAJ": {
+        "title": "The Adventures of Tom Sawyer",
+        "author": [
+            "Mark Twain"
+        ],
+        "publishedDate": "1881",
+        "pages": 274,
+        "rating": 4,
+        "image": "http://books.google.com/books/content?id=yBYmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=cf8edfb26fde6292eb7f783e508d06dd"
+    },
+    "ilRoAwAAQBAJ": {
+        "title": "Frankenstein",
+        "author": [
+            "Mary Shelley"
+        ],
+        "publisher": "BookRix",
+        "publishedDate": "2017-05-22",
+        "pages": 301,
+        "rating": 4,
+        "description": "Frankenstein is a novel written by British author Mary Shelley about eccentric scientist Victor Frankenstein, who creates a grotesque creature in an unorthodox scientific experiment. Frankenstein is infused with some elements of the Gothic novel and the Romantic movement and is also considered to be one of the earliest examples of science fiction. Brian Aldiss has argued that it should be considered the first true science fiction story, because unlike in previous stories with fantastical elements resembling those of later science fiction, the central character \"makes a deliberate decision\" and \"turns to modern experiments in the laboratory\" to achieve fantastic results. It has had a considerable influence across literature and popular culture and spawned a complete genre of horror stories, films, and plays. Since publication of the novel, the name \"Frankenstein\" is often used to refer to the monster itself. This usage is sometimes considered erroneous, but usage commentators regard the monster sense of \"Frankenstein\" as well-established and an acceptable usage. In the novel, the monster is identified via words such as \"creature\", \"monster\", \"fiend\", \"wretch\", \"vile insect\", \"daemon\", \"being\", and \"it\". Speaking to Victor Frankenstein, the monster refers to himself as \"the Adam of your labors\", and elsewhere as someone who \"would have\" been \"your Adam\", but is instead \"your fallen angel.\"",
+        "image": "http://books.google.com/books/content?id=ilRoAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=bfc01601daec13753f0b479c01169d37"
+    },
+    "x7vaDgAAQBAJ": {
+        "title": "Einstein",
+        "author": [
+            "Walter Isaacson"
+        ],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2008-05-13",
+        "pages": 704,
+        "rating": 4,
+        "description": "A narrative portrait based on the complete body of Einstein's papers offers insight into his contributions to science, in an account that describes the influence of his discoveries on his personal views about morality, politics, and tolerance.",
+        "image": "http://books.google.com/books/content?id=x7vaDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": "http://gen.lib.rus.ec/get.php?md5=0bcedfa53edc357d0c757b64e533909a",
+        "epub": "http://gen.lib.rus.ec/get.php?md5=5fdeaba0c1d3dd537a1990f21f0f26a6",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=4deaba9a040d85db421107b3c887ca5f"
+    },
+    "qEoOl9bcV_cC": {
+        "title": "Jane Eyre",
+        "author": [
+            "Charlotte Brontë"
+        ],
+        "publishedDate": "1890",
+        "rating": 4,
+        "image": "http://books.google.com/books/content?id=JuA0AAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=ce8b6db8a92de853fcacd452e835d62f",
+        "_locals": {}
+    },
+    "JuA0AAAAMAAJ": {
+        "title": "Jane Eyre",
+        "author": [
+            "Charlotte Brontë"
+        ],
+        "publishedDate": "1890",
+        "rating": 4,
+        "image": "http://books.google.com/books/content?id=JuA0AAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=ce8b6db8a92de853fcacd452e835d62f",
+        "_locals": {}
+    },
+    "E7mEnx3zE4AC": {
+        "title": "A Brief History of Time",
+        "author": [
+            "Stephen W. Hawking"
+        ],
+        "publisher": "Random House of Canada",
+        "publishedDate": "1998",
+        "pages": 212,
+        "rating": 4,
+        "description": "An anniversary edition of a now-classic survey of the origin and nature of the universe features a new introduction by the author and a new chapter on the possibility of time travel and \"wormholes\" in space",
+        "image": "http://books.google.com/books/content?id=E7mEnx3zE4AC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "mobi": false,
+        "epub": "http://gen.lib.rus.ec/get.php?md5=e36f033611cb270650e06437b4994902",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=44f20116d682817619c770fcdbf66123"
     }
 }
