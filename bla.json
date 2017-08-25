@@ -238,5 +238,46 @@
         "mobi": "http://gen.lib.rus.ec/get.php?md5=0bcedfa53edc357d0c757b64e533909a",
         "epub": "http://gen.lib.rus.ec/get.php?md5=5fdeaba0c1d3dd537a1990f21f0f26a6",
         "pdf": "http://gen.lib.rus.ec/get.php?md5=4deaba9a040d85db421107b3c887ca5f"
+    },
+    "qEoOl9bcV_cC": {
+        "title": "Jane Eyre",
+        "author": [
+            "Charlotte Brontë"
+        ],
+        "publishedDate": "1890",
+        "rating": 4,
+        "image": "http://books.google.com/books/content?id=JuA0AAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=ce8b6db8a92de853fcacd452e835d62f",
+        "_locals": {}
+    },
+    "JuA0AAAAMAAJ": {
+        "title": "Jane Eyre",
+        "author": [
+            "Charlotte Brontë"
+        ],
+        "publishedDate": "1890",
+        "rating": 4,
+        "image": "http://books.google.com/books/content?id=JuA0AAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=ce8b6db8a92de853fcacd452e835d62f",
+        "_locals": {}
+    },
+    "E7mEnx3zE4AC": {
+        "title": "A Brief History of Time",
+        "author": [
+            "Stephen W. Hawking"
+        ],
+        "publisher": "Random House of Canada",
+        "publishedDate": "1998",
+        "pages": 212,
+        "rating": 4,
+        "description": "An anniversary edition of a now-classic survey of the origin and nature of the universe features a new introduction by the author and a new chapter on the possibility of time travel and \"wormholes\" in space",
+        "image": "http://books.google.com/books/content?id=E7mEnx3zE4AC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "mobi": false,
+        "epub": "http://gen.lib.rus.ec/get.php?md5=e36f033611cb270650e06437b4994902",
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=44f20116d682817619c770fcdbf66123"
     }
 }
