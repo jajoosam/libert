@@ -1,6 +1,9 @@
 # Libert 📖
 Get ebooks for free, easily.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 **Recommended: Deploy your own libert to heroku using the button above!**
 
 ## Use Web/Glitch Version
