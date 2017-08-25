@@ -77,7 +77,7 @@ app.get("/:keyword", (req, res) => {
                 if (err)
                   res.sendFile(__dirname + "/error.html");
                   console.log(data);
-                  return err
+                  
                   
                 if(data===undefined){
                   res.sendFile(__dirname + "/error.html");

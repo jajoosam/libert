@@ -77,7 +77,7 @@ body{
 document.getElementById("form").addEventListener("submit", function(ev) {
     ev.preventDefault();
   var button = document.getElementById('lolz');
-  var location = window.location.href + "/" + lolz.value;
+  var location = window.location.href + lolz.value;
   console.log(location)
   window.location.href = location;
 });
