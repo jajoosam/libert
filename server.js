@@ -38,11 +38,13 @@ app.set('view engine', 'pug');
 //index
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
+  return;
 });
 
 //about
 app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/about.html");
+  return;
 });
 
 // app
@@ -83,9 +85,11 @@ app.get("/:keyword", (req, res) => {
           output.pdf = false;
               libgen.search(options, (err, data) => {
                 
-                if (err)
+                if (err){
                   res.sendFile(__dirname + "/error.html");
                   console.log(data);
+                  return;
+                }
                   
                   
                 if(data===undefined){
@@ -111,6 +115,7 @@ app.get("/:keyword", (req, res) => {
                   db.set(id, output);
                 }
                 res.render("index", output);
+                return;
 
             });
             
