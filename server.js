@@ -27,7 +27,7 @@ var options = {
 libgen.mirror(function(err,urlString){
   if (err)
     return console.error(err);
-  options.mirror="urlString";
+  options.mirror=urlString;
   return console.log(urlString + ' is currently fastest');
 });
 
