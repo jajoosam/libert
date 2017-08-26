@@ -19,7 +19,7 @@ const db = new JSONdb("bla.json");
 
 // libgen options
 var options = {
-    mirror: "",
+    mirror: "http://gen.lib.rus.ec",
     query: "",
     author: "",
 };
@@ -118,7 +118,7 @@ app.get("/:keyword", (req, res) => {
       } else {
           res.sendFile(__dirname + "/error.html");
       }
-  });
+    });
   
 });
 
@@ -126,3 +126,4 @@ app.get("/:keyword", (req, res) => {
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+
