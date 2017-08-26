@@ -12,15 +12,24 @@ var JSONdb = require('simple-json-db');
 var output = {};
 var cache = false;
 var id = "";
+
+
 // cache
 const db = new JSONdb("bla.json");
 
 // libgen options
 var options = {
-    mirror: 'http://gen.lib.rus.ec',
+    mirror: "http://gen.lib.rus.ec",
     query: "",
     author: "",
 };
+
+libgen.mirror(function(err,urlString){
+  if (err)
+    return console.error(err);
+  options.mirror=urlString;
+  return console.log(urlString + ' is currently fastest');
+});
 
 // starting express
 app.use(express.static('public'));
@@ -109,7 +118,7 @@ app.get("/:keyword", (req, res) => {
       } else {
           res.sendFile(__dirname + "/error.html");
       }
-  });
+    });
   
 });
 
@@ -117,3 +126,4 @@ app.get("/:keyword", (req, res) => {
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+
