@@ -54,6 +54,7 @@ app.get("/:keyword", (req, res) => {
       if ( ! error && results[0]) {
         id = results[0].id;
         console.log("IDENTITY: " + id);
+        output.id = id;
         // cache check
         if(db.has(id)){
           cache = true;
@@ -86,15 +87,15 @@ app.get("/:keyword", (req, res) => {
               libgen.search(options, (err, data) => {
                 
                 if (err){
-                  res.sendFile(__dirname + "/error.html");
-                  console.log(data);
+                   res.render("error", output);
+                  console.log("bla");
                   return;
                 }
                   
                   
                 if(data===undefined){
-                  res.sendFile(__dirname + "/error.html");
-                  console.log(data);
+                  res.render("error", output);
+                  console.log("bla");
                   return;
                 }
                 
@@ -115,7 +116,7 @@ app.get("/:keyword", (req, res) => {
                   db.set(id, output);
                 }
                 res.render("index", output);
-                return;
+
 
             });
             
