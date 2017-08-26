@@ -356,5 +356,33 @@
         "epub": "http://gen.lib.rus.ec/get.php?md5=bb0565c8903dc6190a8f5542dd8861d4",
         "pdf": "http://gen.lib.rus.ec/get.php?md5=1921db45ae015fadb6c88c05c5a1c760",
         "_locals": {}
+    },
+    "l9b7oQEACAAJ": {
+        "title": "Half Girlfriend",
+        "author": [
+            "Chetan Bhagat"
+        ],
+        "publishedDate": "2014-10-01",
+        "pages": 280,
+        "rating": 4.5,
+        "image": "http://books.google.com/books/content?id=l9b7oQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "mobi": false,
+        "epub": false,
+        "pdf": "http://gen.lib.rus.ec/get.php?md5=affc310fac39fb54766a61ccd0604169"
+    },
+    "4FmpBAAAQBAJ": {
+        "title": "Dirk Gently's Holistic Detective Agency",
+        "author": [
+            "Douglas Adams"
+        ],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2014-10-07",
+        "pages": 260,
+        "rating": 3.5,
+        "description": "From Douglas Adams, the legendary author of one of the most beloved science fiction novels of all time, The Hitchhiker’s Guide to the Galaxy, comes a wildly inventive novel—in trade paperback for the first time—of ghosts, time travel, and one detective’s mission to save humanity from extinction. DIRK GENTLY’S HOLISTIC DETECTIVE AGENCY We solve the whole crime We find the whole person Phone today for the whole solution to your problem (Missing cats and messy divorces a specialty) Douglas Adams, the “master of wacky words and even wackier tales” (Entertainment Weekly) once again boggles the mind with a completely unbelievable story of ghosts, time travel, eccentric computer geniuses, Samuel Taylor Coleridge, the end of the world, and—of course—missing cats.",
+        "image": "http://books.google.com/books/content?id=4FmpBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "mobi": false,
+        "epub": "http://libgen.io/get.php?md5=b98a1ef41f49bb196bb798b5a3e88b37",
+        "pdf": "http://libgen.io/get.php?md5=0a98c217e4ab8822c57e7d25d21f5a89"
     }
 }
