@@ -48,3 +48,7 @@ Libert wouldn't have been the same without [@leovarmak](http://twitter.com/leova
 ## Disclaimer
 
 All libert does is fetch books from gen.lib.rus.ec, with a different UI. It is designed to make using the source easier, and does not host anything itself. I, Samarth Jajoo, claim no responsibility for any materials hosted at the source.
+
+## License
+
+All code under http://jajoosam.tech/license
