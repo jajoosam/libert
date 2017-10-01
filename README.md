@@ -30,14 +30,13 @@ If you're looking for Libert CLI, https://glitch.com/~libert-cli
 If you're looking for the Github Page, https://github.com/jajoosam/libert
 
 ## To-Do
-- Landing Page
-- Search button
+- Adding options for the search can allow the user to disable google books, and maybe even choose lingen mirrors.
 - Full Google API usage, with
   1. User Data
   2. Recommendations
   3. Previews
-- Conversion from and to different ebook formats
-- Add to npm registry
+- Conversion from and to different ebook formats - CLI
+- Add CLI to npm registry, and make a subfolder on this repo for it as well
 
 
 
