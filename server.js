@@ -7,21 +7,17 @@ var app = express();
 // other dependencies
 var fs = require('fs');
 var libgen = require('libgen');
-var books = require('google-books-search');
+var googleBooks = require('google-books-search');
 var JSONdb = require('simple-json-db');
-var output = {};
-var cache = false;
-var id = "";
 
 
-// cache
-const db = new JSONdb("bla.json");
+//cache
+var _db;
 
 // libgen options
 var options = {
     mirror: "http://gen.lib.rus.ec",
-    query: "",
-    author: "",
+    query: ""
 };
 
 libgen.mirror(function(err,urlString){
@@ -50,86 +46,121 @@ app.get("/about", (req, res) => {
 // app
 app.get("/:keyword", (req, res) => {
   options.query = req.params.keyword;
-    books.search(options.query, function(error, results) {
-      if ( ! error && results[0]) {
-        id = results[0].id;
-        console.log("IDENTITY: " + id);
-        output.id = id;
-        // cache check
-        if(db.has(id)){
-          cache = true;
-          console.log("from cache")
-          res.render("index", db.get(id));
-          return;
+
+    googleBooks.search(options.query, function(error, results) {
+      if ( ! error && results.length>0) {
+        // cache
+        const sanitizedQuery = options.query.replace(/\s/g,'');
+        _db = new JSONdb('cache/'+sanitizedQuery+'.json');
+        var books = [], i;
+        for(i=results.length-1; i>=0; i--) {
+          var b = grabGoogleBook(results[i]);
+          if(b) books.push( b );
         }
-        
-         // book info
-         output.title = results[0].title ;
-         output.author = results[0].authors;
-         output.publisher = results[0].publisher;
-         output.publishedDate = results[0].publishedDate;
-         output.pages = results[0].pageCount;
-         output.rating = results[0].averageRating;
-         output.description = results[0].description;
-         output.image = results[0].thumbnail;
-         
-         if(results[0].authors === undefined){
-           res.sendFile(__dirname + "/error.html");
-           return;
-         }
-        // setting libgen search option
-        options.query = results[0].title + " " + results[0].authors[0];
-        // reading libgen results
-          // dummy links for verification
-          output.mobi = false;
-          output.epub = false;
-          output.pdf = false;
-              libgen.search(options, (err, data) => {
-                
-                if (err){
-                   res.render("error", output);
-                  console.log("bla");
-                  return;
-                }
-                  
-                  
-                if(data===undefined){
-                  res.render("error", output);
-                  console.log("bla");
-                  return;
-                }
-                
-                var n = data.length;
-                // link to actual download links
-                while (n--){
-                  if(data[n].extension == "mobi" && output.mobi == false){
-                    output.mobi = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
-                  }
-                  if(data[n].extension == "epub" && output.epub == false){
-                    output.epub = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
-                  }
-                  if(data[n].extension == "pdf" && output.pdf == false){
-                    output.pdf = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
-                  }
-                }
-                if(cache===false){
-                  db.set(id, output);
-                }
-                res.render("index", output);
 
+        if(books.length===0) { // no results found
+          res.sendFile(__dirname + "/error.html");
+        } else {
 
-            });
-            
-          
+          // now find each book on LibGen...
+          var promisedBooks = [];
+          books.forEach(function(book) {
+            promisedBooks.push( grabLibgenBook(book) );
+          });
+
+          // once we have all books information...
+          Promise.all(promisedBooks).then((values) => {
+            // TODO: This should be changed to render a books gallery results...
+            res.render("index", values[0]);
+          });
+        }
       } else {
           res.sendFile(__dirname + "/error.html");
       }
     });
-  
 });
 
+
+function grabLibgenBook(book) {
+  var promise = new Promise((resolve, reject) => {
+
+    if(_db.has(book.id)) {
+      console.log(book.title + " is served from cache");
+      var b = _db.get(book.id);
+      b.cache = true;
+      resolve(b);
+      return;
+    }
+
+    options.query = book.title + ", " + book.author;
+    console.log('libgen search:', options.query);
+    libgen.search(options, (err, data) => {
+
+      if (err) {
+        console.log('LibGen Error:', err.message);
+        resolve(null);
+        return false;
+      }
+        
+      if(data===undefined) {
+        console.log("no data");
+        resolve(null);
+        return false;
+      }
+
+      var n = data.length;
+
+      // link to actual download links
+      while (n--){
+        if(data[n].extension == "mobi" && book.mobi == false) {
+          book.mobi = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
+        }
+        if(data[n].extension == "epub" && book.epub == false) {
+          book.epub = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
+        }
+        if(data[n].extension == "pdf" && book.pdf == false) {
+          book.pdf = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
+        }
+      }
+
+      // add this book to query cache...
+      _db.set(book.id, book);
+
+      resolve(book);
+    }); // finish libgen search
+  });
+
+  return promise;
+}
+
+function grabGoogleBook(book) {
+  // skip this book if we don't have complete data
+  if(book.authors === undefined) {
+     return false;
+  }
+
+  var output = {};
+  output.id = book.id;
+  output.title = book.title;
+  output.author = book.authors[0];
+  output.publisher = book.publisher;
+  output.publishedDate = book.publishedDate;
+  output.pages = book.pageCount;
+  output.rating = book.averageRating;
+  output.description = book.description;
+  output.image = book.thumbnail;
+   
+  // setting libgen search option
+  output.mobi = false;
+  output.epub = false;
+  output.pdf = false;
+
+  return output;
+}
+
 // listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
+const PORT = process.env.port || 3000;
+var listener = app.listen(3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
 
