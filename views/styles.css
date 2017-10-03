@@ -1,8 +1,3 @@
-img.card-body {
-  position: relative;
-  display: block;
-}
-
 a {
   opacity: 0.8;
   cursor: not-allowed;
@@ -12,4 +7,20 @@ a {
 a[href] {
   opacity: 1;
   cursor: pointer;
+}
+.book-cover {
+	text-align: center;
+}
+.book-description {
+	width: 100%;
+	height: 122px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 770px) {
+	.book-cover {
+		min-height: 170px;
+		text-align: left;
+	}
 }
