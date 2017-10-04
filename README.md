@@ -11,11 +11,12 @@ Get ebooks for free, easily.
 ## Use Web/Glitch Version
 Just go to [libert.glitch.me/](https://libert.glitch.me/) + `book`
 
-Examples with public domain books - 
-
-- https://libert.glitch.me/frankenstein
-- https://libert.glitch.me/jane%20eyre
-- https://libert.glitch.me/tom%20sawyer
+<h2>Examples with public domain books:</h2>
+<ul>
+<li><a href='https://libert.glitch.me/frankenstein' target='_blank'>Frankenstein</a></li>
+<li><a href='https://libert.glitch.me/jane%20eyre' target='_blank'>Jane Eyre</a></li>
+<li><a href='https://libert.glitch.me/tom%20sawyer' target='_blank'>Tom Sawyer</a></li>
+</ul>
 
 ## Web version - Glitch Page
 If you're looking for Libert web, https://glitch.com/~libert
@@ -49,4 +50,3 @@ Libert wouldn't have been the same without [@leovarmak](http://twitter.com/leova
 ## Disclaimer
 
 Libert fetches information about ebooks from http://libgen.io or http://gen.lib.rus.ec, and Google books with a different UI, without downloading or storing any ebook or book itself. The intention of Libert is to help people obtain information about public domain books without infringing on copyright or any form of Intellectual property right breach of any kind.
-
