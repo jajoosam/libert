@@ -6,32 +6,36 @@ html
       include wing.css
     style
       include styles.css
-    title=title + " - libert 📖"
+    title= "Books for " + search + " - libert 📖"
   body
     div(class="container")
       div(class="cards horizontal-align vertical-align")
-        div(class="card")
-          h5(class="card-header")=title
-          img(src=image class="card-body")
-          p(class="card-body")
-            b Author: 
-            span #{author}
-            br
-            b Pages: 
-            span #{pages}
-            br
-            b Rating: 
-            span #{rating}
-            br
-            span #{description}
-            
-          div(class="card-footer center text-center")
-            p
-              a(href=mobi class="button" target="_blank") mobi
-              span   
-              a(href=epub class="button" target="_blank") epub
-              span   
-              a(href=pdf class="button" target="_blank") pdf
-            a(href="http://jajoosam.tech/pay" class ="button outline") Donate
+        for book in books
+          if book != null
+            div(class="card")
+              h5(class="card-header")= book.title
+              div(class="card-body")
+                div(class="row")
+                  div(class="col-5 book-cover")
+                    img(src=book.image class="responsive-img")
+                  div(class="col-7")
+                    b Author:
+                    span #{book.author}
+                    br
+                    b Pages:
+                    span #{book.pages}
+                    br
+                    b Rating:
+                    span #{book.rating}
+                p(class="book-description") #{book.description}
+                
+              div(class="card-footer center text-center")
+                p
+                  a(href=book.mobi class="button" target="_blank") mobi
+                  span   
+                  a(href=book.epub class="button" target="_blank") epub
+                  span   
+                  a(href=book.pdf class="button" target="_blank") pdf
+                a(href="http://jajoosam.tech/pay" class ="button outline") Donate
         script
           include tracking.js

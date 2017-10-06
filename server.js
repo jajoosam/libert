@@ -45,23 +45,30 @@ app.get("/about", (req, res) => {
 
 // app
 app.get("/:keyword", (req, res) => {
-  options.query = req.params.keyword;
+  var _query = options.query = req.params.keyword;
 
-    googleBooks.search(options.query, function(error, results) {
+  console.log('loading books for...', _query);
+    googleBooks.search(_query, function(error, results) {
       if ( ! error && results.length>0) {
         // cache
-        const sanitizedQuery = options.query.replace(/\s/g,'');
+        const sanitizedQuery = _query.replace(/\s/g,'');
         _db = new JSONdb('cache/'+sanitizedQuery+'.json');
+
+        // create standarized array of books:
         var books = [], i;
+        // console.log('Standarizing results...', results.length);
         for(i=results.length-1; i>=0; i--) {
           var b = grabGoogleBook(results[i]);
-          if(b) books.push( b );
+          if(b) {
+            console.log(' - G: '+b.title);
+            books.push( b );
+          }
         }
 
         if(books.length===0) { // no results found
           res.sendFile(__dirname + "/error.html");
         } else {
-
+          // console.log('Loading data from LibGen...');
           // now find each book on LibGen...
           var promisedBooks = [];
           books.forEach(function(book) {
@@ -70,8 +77,24 @@ app.get("/:keyword", (req, res) => {
 
           // once we have all books information...
           Promise.all(promisedBooks).then((values) => {
-            // TODO: This should be changed to render a books gallery results...
-            res.render("index", values[0]);
+            // console.log('Rendering results...', values.length);
+
+            var validBooks = [];
+            values.forEach(function(b){
+              if(b!==null) {
+                validBooks.push(b);
+              }
+            });
+            
+            if(validBooks.length>0) {
+              res.render("index", {search: _query, books: values});
+            } else {
+              // no books found on LibGen :(
+              res.sendFile(__dirname + "/error.html");
+            }
+          }).catch((err) => {
+            console.error(err);
+            res.sendFile(__dirname + "/error.html");
           });
         }
       } else {
@@ -85,49 +108,48 @@ function grabLibgenBook(book) {
   var promise = new Promise((resolve, reject) => {
 
     if(_db.has(book.id)) {
-      console.log(book.title + " is served from cache");
+      // console.log(' - LG: ' + book.title + " is served from cache");
       var b = _db.get(book.id);
       b.cache = true;
       resolve(b);
-      return;
+    } else {
+      options.query = book.title + ", " + book.author;
+      // console.log(' - LibGen search:', options.query);
+      libgen.search(options, (err, data) => {
+
+        if (err) {
+          // console.log(' - LibGen Error:', err.message);
+          resolve(null);
+          return false;
+        }
+          
+        if(data===undefined) {
+          console.log(" - LibGen - no data");
+          resolve(null);
+          return false;
+        }
+
+        var n = data.length;
+
+        // link to actual download links
+        while (n--){
+          if(data[n].extension == "mobi" && book.mobi == false) {
+            book.mobi = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
+          }
+          if(data[n].extension == "epub" && book.epub == false) {
+            book.epub = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
+          }
+          if(data[n].extension == "pdf" && book.pdf == false) {
+            book.pdf = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
+          }
+        }
+
+        // add this book to query cache...
+        _db.set(book.id, book);
+
+        resolve(book);
+      }); // finish libgen search
     }
-
-    options.query = book.title + ", " + book.author;
-    console.log('libgen search:', options.query);
-    libgen.search(options, (err, data) => {
-
-      if (err) {
-        console.log('LibGen Error:', err.message);
-        resolve(null);
-        return false;
-      }
-        
-      if(data===undefined) {
-        console.log("no data");
-        resolve(null);
-        return false;
-      }
-
-      var n = data.length;
-
-      // link to actual download links
-      while (n--){
-        if(data[n].extension == "mobi" && book.mobi == false) {
-          book.mobi = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
-        }
-        if(data[n].extension == "epub" && book.epub == false) {
-          book.epub = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
-        }
-        if(data[n].extension == "pdf" && book.pdf == false) {
-          book.pdf = options.mirror + '/get.php?md5=' + data[n].md5.toLowerCase();
-        }
-      }
-
-      // add this book to query cache...
-      _db.set(book.id, book);
-
-      resolve(book);
-    }); // finish libgen search
   });
 
   return promise;

@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    link(rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/309c5cca-6250-4906-a738-5feca93112a4%2Ffavicon.ico?1503062906990")
+    style
+      include wing.css
+    style
+      include styles.css
+    title=title + " - libert 📖"
+  body
+    div(class="container")
+      div(class="cards horizontal-align vertical-align")
+        div(class="card")
+          h5(class="card-header")=title
+          img(src=image class="card-body")
+          p(class="card-body")
+            b Author: 
+            span #{author}
+            br
+            i Pages: 
+            span #{pages}
+            br
+            b Rating: 
+            span #{rating}
+            br
+            span #{description}
+            
+          div(class="card-footer center text-center")
+            p
+              a(href=mobi class="button" target="_blank") mobi
+              span   
+              a(href=epub class="button" target="_blank") epub
+              span   
+              a(href=pdf class="button" target="_blank") pdf
+            a(href="http://jajoosam.tech/pay" class ="button outline") Donate
+        script
+          include tracking.js
