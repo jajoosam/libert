@@ -37,9 +37,9 @@ app.get("/", (req, res) => {
   return;
 });
 
-//about
-app.get("/about", (req, res) => {
-  res.sendFile(__dirname + "/about.html");
+//disclaimer
+app.get("/disclaimer", (req, res) => {
+  res.sendFile(__dirname + "/disclaimer.html");
   return;
 });
 
