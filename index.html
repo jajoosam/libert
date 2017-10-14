@@ -213,5 +213,32 @@
 	 ga('send', 'pageview');
 
 	</script> 
+	<script>
+
+	    MicroModal.init({
+	      onClose: modal => console.info(`${modal.id} is hidden`),
+	      onShow: modal => console.info(`${modal.id} is shown`)
+	    });
+
+	    var section = document.querySelectorAll(".heading");
+	    var sections = {};
+
+	    Array.prototype.forEach.call(section, function(e) {
+	      sections[e.id] = e.offsetTop;
+	    });
+
+	    window.onscroll = function() {
+	      var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+	      for (i in sections) {
+	        if (sections[i] <= scrollPosition) {
+	          document.querySelector('.active').classList.remove('blue', 'fw6', 'active');
+	          document.querySelector('a[href*=' + i + ']').classList.add('blue', 'fw6', 'active');
+	        }
+	      }
+	    };
+
+
+	</script>
 </body>
 </html>
