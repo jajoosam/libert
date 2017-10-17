@@ -45,7 +45,7 @@ If you're looking for the Github Page, https://github.com/jajoosam/libert
 
 Try to stick to the To-Do, open an issue on github if you have an idea for a new feature. If you've added something cool, email `libert@jajoosam.tech` to notify me, and we'll try to merge :-)
 
-Libert wouldn't have been the same without [@leovarmak](http://twitter.com/leovarmak) and [@kbrsh](http://kabir.ml)
+Libert wouldn't have been the same without [@leovarmak](http://twitter.com/leovarmak), [@kbrsh](http://kabir.ml), and [@jalamprea](https://github.com/jalamprea)
 
 ## Disclaimer
 
