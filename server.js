@@ -57,7 +57,7 @@ app.get("/:keyword", (req, res) => {
         // create standarized array of books:
         var books = [], i;
         // console.log('Standarizing results...', results.length);
-        for(i=results.length-1; i>=0; i--) {
+        for(i=0; i<results.length; i++) {
           var b = grabGoogleBook(results[i]);
           if(b) {
             console.log(' - G: '+b.title);
