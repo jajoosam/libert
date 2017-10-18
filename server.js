@@ -24,12 +24,12 @@ var options = {
     author: "",
 };
 
-libgen.mirror(function(err,urlString){
-  if (err)
-    return console.error(err);
-  options.mirror=urlString;
-  return console.log(urlString + ' is currently fastest');
-});
+// libgen.mirror(function(err,urlString){
+//   if (err)
+//     return console.error(err);
+//   options.mirror=urlString;
+//   return console.log(urlString + ' is currently fastest');
+// });
 
 // starting express
 app.use(express.static('public'));
@@ -88,7 +88,7 @@ app.get("/:keyword", (req, res) => {
                 
                 if (err){
                    res.render("error", output);
-                  console.log("bla");
+                  console.log("zsh");
                   return;
                 }
                   
