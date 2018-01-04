@@ -6,16 +6,7 @@ Get ebooks for free, easily.
 
 **Recommended: Deploy your own libert to heroku using the button above!**
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/gk2KHfxPsEcG2TgXLtSXnnoA/jajoosam/libert'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/gk2KHfxPsEcG2TgXLtSXnnoA/jajoosam/libert.svg' /></a>
-
-## Use Web/Glitch Version
-Just go to [libert.glitch.me/](https://libert.glitch.me/) + `book`
-
-<h2>Examples with public domain books:</h2>
-<ul>
-<li><a href='https://libert.glitch.me/frankenstein' target='_blank'>Frankenstein</a></li>
-<li><a href='https://libert.glitch.me/jane%20eyre' target='_blank'>Jane Eyre</a></li>
-<li><a href='https://libert.glitch.me/tom%20sawyer' target='_blank'>Tom Sawyer</a></li>
+</li>
 </ul>
 
 ## Web version - Glitch Page
